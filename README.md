@@ -2,7 +2,7 @@
 
 ## Projeto de Mentoria em Flutter
 
-Este projeto de mentoria em Flutter visa o desenvolvimento didático de um aplicativo de controle financeiro com o objeito de utilizar-se todas as habilidades de um desenvolvedor flutter júnior .
+Este projeto de mentoria em Flutter visa o desenvolvimento didático de um aplicativo de controle financeiro com o objetivo de utilizar-se todas as habilidades de um desenvolvedor flutter júnior .
 
 ### Habilidades a serem desenvolvidas:
 
@@ -53,13 +53,13 @@ Este projeto é dividido em etapas, e cada etapa corresponde a uma funcionalidad
 
 - Padrões de branch e commit https://www.tabnews.com.br/danilocarsan/este-e-um-guia-guia-de-versionamento-nomenclatura-git-que-usso-e-tenho-melhorado-o-que-eu-pederia-melhorar-aberto-a-sugestao-e-discussao
 
-3. Toda a feature será revisada e corrigida por meio de um pull request 
+3. Toda a feature será revisada e corrigida por meio de um pull request (abrir pr para a branch develop)
 
-  - https://www.youtube.com/watch?v=aUh21RzRRa8&ab_channel=TheCodingCocoon
+  - Como abrir um pull request: https://www.youtube.com/watch?v=aUh21RzRRa8&ab_channel=TheCodingCocoon
 
 
 # Etapa 1 - Desenvolvimento do UI 
-A organização inicialde pastas do app será da seguinte maneira 
+A organização inicial de pastas do app será da seguinte maneira 
 
 <img width="206" alt="Captura de Tela 2024-03-26 às 00 25 06" src="https://github.com/mendesviton/economiza-facil/assets/94265037/84526a96-f9a0-466d-908c-920bb4e38559">
 
