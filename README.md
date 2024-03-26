@@ -53,7 +53,7 @@ Este projeto é dividido em etapas, e cada etapa corresponde a uma funcionalidad
 
 - Padrões de branch e commit https://www.tabnews.com.br/danilocarsan/este-e-um-guia-guia-de-versionamento-nomenclatura-git-que-usso-e-tenho-melhorado-o-que-eu-pederia-melhorar-aberto-a-sugestao-e-discussao
 
-3. Toda a feature será revisada e corrigida por meio de um pull request (abrir pr para a branch develop)
+3. Toda a feature será revisada e corrigida por meio de um pull request (abrir pr para a branch develop-seu-nome)
 
   - Como abrir um pull request: https://www.youtube.com/watch?v=aUh21RzRRa8&ab_channel=TheCodingCocoon
 
