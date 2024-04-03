@@ -1,17 +1,23 @@
-import 'package:economiza_facil/splashscreen.dart';
 import 'package:flutter/material.dart';
+import 'package:economiza_facil/modules/signin/splash/splash_screen.dart';
+import 'package:economiza_facil/modules/signin/login/login_page.dart';
+import 'package:economiza_facil/routes.dart'; 
 
 void main() {
   runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  const MyApp({Key? key});
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: SplashScreen(),
+    return MaterialApp(
+      initialRoute: '/',
+      routes: {
+        '/': (context) => SplashScreen(),
+        '/login': (context) => LoginPage(),
+      },
     );
   }
 }
