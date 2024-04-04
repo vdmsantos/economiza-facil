@@ -4,7 +4,7 @@ import 'package:economiza_facil/modules/signin/login/login_page.dart';
 import 'package:economiza_facil/routes.dart'; 
 
 void main() {
-   runApp(const MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {

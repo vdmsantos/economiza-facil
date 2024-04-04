@@ -18,7 +18,7 @@ class _SplashScreenState extends State<SplashScreen> {
     
   }
 
-void _loadNextScreen(BuildContext context) async {
+  void _loadNextScreen(BuildContext context) async {
   
     Future.delayed(
       const Duration(seconds: 3),
