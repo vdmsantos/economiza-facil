@@ -6,4 +6,3 @@ final Map<String, WidgetBuilder> routes = {
   SplashScreen.route: (context) => SplashScreen(),
   LoginPage.route: (context) => LoginPage(),
 };
-
