@@ -1,4 +1,4 @@
-# Economiza Fácil
+![image](https://github.com/mendesviton/economiza-facil/assets/94265037/31827634-59b7-479a-8969-86a241d5f730)# Economiza Fácil
 
 ## Projeto de Mentoria em Flutter
 
@@ -89,4 +89,86 @@ Exemplo de timer no flutter:
 Future.delayed(const Duration(seconds: 1), () {
   print('One second has passed.'); // Prints after 1 second.
 });
+````
+### Criaçao de um tema padrão para o aplicativo utilizando extensions
+
+
+Extensões no Flutter
+
+No Flutter, uma extensão é uma maneira de adicionar funcionalidades a um tipo existente sem modificar diretamente sua implementação.No snippet de código abaixo, a extensão CustomColorsScheme está sendo aplicada ao ColorScheme, que é um objeto usado para definir um esquema de cores no Flutter. Essa extensão adiciona métodos getter que facilitam o acesso a cores específicas dentro do seu esquema personalizado de cores.
+
+A sintaxe extension CustomColorsScheme on ColorScheme define uma extensão chamada CustomColorsScheme que se aplica ao tipo ColorScheme. Dentro desta extensão, estão definidos métodos get para obter cores específicas do AppColors (presumivelmente uma classe ou recurso que define cores personalizadas no seu aplicativo).
+
+Para a implementação das cores que você mencionou, aqui está a definição da extensão no Flutter:
+
+Necessário criar um arquivo de extensions.dart (em um diretório que faça sentido, Shared ou Core)
+adicione as cores que o app esta utilizando 
+exemplo:
+````
+import 'package:flutter/material.dart';
+
+// Supondo que AppColors seja uma classe que define cores personalizadas
+class AppColors {
+  static const Color greenFF57B98F = Color(0xFF57B98F);
+  static const Color brownFF6F563E = Color(0xFF6F563E);
+  static const Color greenFF228463 = Color(0xFF228463);
+  static const Color greenFF2DB184 = Color(0xFF2DB184);
+}
+
+// Definindo a extensão para o ColorScheme
+extension CustomColorsScheme on ColorScheme {
+  Color get greenFF57B98F => AppColors.greenFF57B98F;
+  Color get brown6F563E => AppColors.brownFF6F563E;
+  Color get greenFF228463 => AppColors.greenFF228463;
+  Color get greenFF2DB184 => AppColors.greenFF2DB184;
+}
+````
+
+para utilizar as cores em um widget 
+
+![image](https://github.com/mendesviton/economiza-facil/assets/94265037/6c814a8e-bc7e-4828-8709-1347d35071c6)
+
+Da mesma forma pode ser utilizando com os textStyles 
+
+exemplo:
+````
+extension CustomTextThemeX on TextTheme {
+  TextStyle get _smallText => const TextStyle(fontSize: 14.0);
+  
+
+  TextStyle get smallWhiteTextStyle => _smallText.copyWith(
+        color: AppColors.white,
+        fontWeight: FontWeight.w600,
+        fontFamily: AppFontFamily.openSans,
+      );
+}
+````
+
+![Captura de Tela 2024-04-08 às 09 09 58](https://github.com/mendesviton/economiza-facil/assets/94265037/28af513f-cbc9-4b07-9464-fbaf6c4435c7)
+
+Classe global para Strings
+
+Deve-se criar uma classe para strings, aonde cada string utilizada no app é uma variavel estática (https://medium.com/@anslemAnsy/the-importance-of-static-variables-in-flutter-classes-7602b3abcc9a)
+ou seja, uma variavel que pode ser utilizada sem instanciar a classe AppStrings por exemplo 
+
+exemplo:
+````
+class AppStrings {
+  static const String selectOptionsResetPassword =
+      'Selecione uma das opções para receber\no seu token de confirmação de acesso:';
+  static const String update = 'Atualizar';
+  static const String toFinishEnterYourPassword =
+      'Para concluir, insira sua senha';
+  static const String searchAddress = 'Busca endereço';
+  static const String advancedSearch = 'Busca avançada';
+}
+````
+
+implementação
+
+![Captura de Tela 2024-04-08 às 09 14 28](https://github.com/mendesviton/economiza-facil/assets/94265037/0091711a-d04e-456c-a21c-12e1f4ad8658)
+
+
+
+
 
