@@ -6,3 +6,4 @@ final Map<String, WidgetBuilder> routes = {
   SplashScreen.route: (context) => const SplashScreen(),
   LoginPage.route: (context) => const LoginPage(),
 };
+

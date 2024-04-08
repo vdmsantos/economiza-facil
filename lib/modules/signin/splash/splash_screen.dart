@@ -6,6 +6,7 @@ import 'package:economiza_facil/modules/signin/login/login_page.dart';
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);
   static String route = '/';
+
   @override
   _SplashScreenState createState() => _SplashScreenState();
 }
@@ -24,6 +25,7 @@ class _SplashScreenState extends State<SplashScreen> {
         if (mounted) {
           Navigator.of(context).pushReplacement(
             MaterialPageRoute(
+
               builder: (BuildContext context) => const LoginPage(),
             ),
           );
@@ -35,7 +37,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromRGBO(244, 132, 36, 1),
+      backgroundColor: Color.fromRGBO(244, 132, 36, 1), // Cor de fundo
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
